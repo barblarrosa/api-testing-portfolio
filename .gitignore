@@ -142,6 +142,6 @@ vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
 
-# Secretos y entornos locales
+# Secrets and local environments
 .env
 environments/*.local.json
