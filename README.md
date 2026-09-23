@@ -18,7 +18,7 @@ Base URL: `[https://api.github.com](https://api.github.com)`
 - Authentication and authorization behaviour (401 Unauthorized vs 403 Forbidden)
 - Contract validation against JSON Schema
 - Data-driven execution over multiple input sets
-- Error handling, rate limit headers and pagination
+- Error handling, and rate limit headers
 
 ## Stack
 
@@ -33,7 +33,7 @@ Base URL: `[https://api.github.com](https://api.github.com)`
 ├── environments/       # Environment templates (no credentials)
 ├── data/               # CSV and JSON files for data-driven testing
 ├── schemas/            # JSON Schema definitions used for contract validation
-├── docs/               # Test strategy, test cases (with traceability), defect log
+├── docs/               # Test strategy, test cases, defect log
 ├── reports/            # Curated execution reports
 └── .github/workflows/  # CI pipeline configuration
 
