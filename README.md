@@ -39,10 +39,8 @@ docs/                 # Test strategy, test cases (with traceability), defect lo
 reports/              # Curated execution reports
 .github/workflows/    # CI pipeline configuration
 
-## Credentials
+Credentials
+No tokens or secrets are stored in this repository. Environment files are committed as templates with empty values; secrets are resolved from Postman Vault locally and from repository secrets (SANDBOX_PAT) in CI.
 
-No tokens or secrets are stored in this repository. Environment files are committed as templates with empty values; secrets are resolved from Postman Vault locally and from repository secrets (`SANDBOX_PAT`) in CI.
-
-## Author
-
-Barbara Larrosa — ATS Analyst [LinkedIn](https://www.linkedin.com/in/barblarrosa/)
+Author
+Barbara Larrosa — ATS Analyst · LinkedIn
