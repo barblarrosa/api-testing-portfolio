@@ -15,11 +15,11 @@ exercised against a sandbox repository owned by the author.
 
 | Item | Value |
 | --- | --- |
-| Base URL | `https://api.github.com` |
-| Target repository | `barblarrosa/api-testing-sandbox` (public) |
-| API version header | `X-GitHub-Api-Version: 2022-11-28` |
-| Accept header | `application/vnd.github+json` |
-| Authentication | Fine-grained personal access token |
+| **Base URL** | `https://api.github.com` |
+| **Target repository** | `barblarrosa/api-testing-sandbox` (public) |
+| **API version header** | `X-GitHub-Api-Version: 2022-11-28` |
+| **Accept header** | `application/vnd.github+json` |
+| **Authentication** | Fine-grained personal access token |
 
 GitHub was chosen over a mock or locally hosted API because it forces the suite to
 deal with conditions a toy API does not have: real token-based authorization,
