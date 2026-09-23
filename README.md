@@ -11,8 +11,8 @@ In progress — started September 2026.
 The GitHub REST API, exercised against a dedicated sandbox repository. Chosen over the usual practice APIs because it is a production service with real authentication, rate limiting, pagination and error semantics (401 / 403 / 404 / 422), which makes negative and boundary testing meaningful rather than simulated.
 
 Base URL: `[https://api.github.com](https://api.github.com)`
-**Sandbox repository:** [barblarrosa/api-testing-sandbox]
-(https://github.com/barblarrosa/api-testing-sandbox)
+**Sandbox repository:** `[barblarrosa/api-testing-sandbox]`
+`https://github.com/barblarrosa/api-testing-sandbox`
 
 ## Scope
 
