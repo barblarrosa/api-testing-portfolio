@@ -1,0 +1,36 @@
+{
+  "name": "GitHub Sandbox",
+  "_postman_variable_scope": "environment",
+  "values": [
+    {
+      "key": "base_url",
+      "value": "https://api.github.com",
+      "enabled": true
+    },
+    {
+      "key": "owner",
+      "value": "barblarrosa",
+      "enabled": true
+    },
+    {
+      "key": "repo",
+      "value": "api-testing-sandbox",
+      "enabled": true
+    },
+    {
+      "key": "pat_rw",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "pat_ro",
+      "value": "",
+      "enabled": true
+    },
+    {
+      "key": "run_id",
+      "value": "",
+      "enabled": true
+    }
+  ]
+}
