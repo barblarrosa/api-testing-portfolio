@@ -13,13 +13,12 @@ npm-debug.log*
 
 # Postman environments with real values
 *.postman_environment.json
-environments/*.local.json
-!environments/*.template.json
+postman/environments/*.local.json
+!postman/environments/*.template.json
 
-# Generated execution reports (only curated samples are committed)
-reports/*
-!reports/.gitkeep
-!reports/sample/
+# Newman default output (local runs).
+# One curated sample report is committed under reports/ in a later phase.
+newman/
 
 # Editors
 .vscode/
