@@ -29,13 +29,16 @@ Base URL: `[https://api.github.com](https://api.github.com)`
 - **GitHub Actions** — CI pipeline (event-triggered and manual runs)
 
 ## Repository Structure
-├── collections/        # Exported Postman collections
-├── environments/       # Environment templates (no credentials)
-├── data/               # CSV and JSON files for data-driven testing
-├── schemas/            # JSON Schema definitions used for contract validation
-├── docs/               # Test strategy, test cases, defect log
-├── reports/            # Curated execution reports
-└── .github/workflows/  # CI pipeline configuration
+
+```
+collections/          # Exported Postman collections
+environments/         # Environment templates (no credentials)
+data/                 # CSV and JSON files for data-driven testing
+schemas/              # JSON Schema definitions used for contract validation
+docs/                 # Test strategy, test cases, defect log
+reports/              # Curated execution reports
+.github/workflows/    # CI pipeline configuration
+```
 
 ## Credentials
 
