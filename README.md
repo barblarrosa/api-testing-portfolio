@@ -10,7 +10,7 @@ In progress — started September 2026.
 
 The GitHub REST API, exercised against a dedicated sandbox repository. Chosen over the usual practice APIs because it is a production service with real authentication, rate limiting, pagination and error semantics (401 / 403 / 404 / 422), which makes negative and boundary testing meaningful rather than simulated.
 
-Base URL: `https://api.github.com`
+Base URL: `[https://api.github.com](https://api.github.com)`
 
 ## Scope
 
@@ -29,18 +29,18 @@ Base URL: `https://api.github.com`
 - **GitHub Actions** — CI pipeline (event-triggered and manual runs)
 
 ## Repository Structure
+├── collections/        # Exported Postman collections
+├── environments/       # Environment templates (no credentials)
+├── data/               # CSV and JSON files for data-driven testing
+├── schemas/            # JSON Schema definitions used for contract validation
+├── docs/               # Test strategy, test cases (with traceability), defect log
+├── reports/            # Curated execution reports
+└── .github/workflows/  # CI pipeline configuration
 
-```text
-collections/          # Exported Postman collections
-environments/         # Environment templates (no credentials)
-data/                 # CSV and JSON files for data-driven testing
-schemas/              # JSON Schema definitions used for contract validation
-docs/                 # Test strategy, test cases (with traceability), defect log
-reports/              # Curated execution reports
-.github/workflows/    # CI pipeline configuration
+## Credentials
 
-Credentials
-No tokens or secrets are stored in this repository. Environment files are committed as templates with empty values; secrets are resolved from Postman Vault locally and from repository secrets (SANDBOX_PAT) in CI.
+No tokens or secrets are stored in this repository. Environment files are committed as templates with empty values; secrets are resolved from Postman Vault locally and from repository secrets (`SANDBOX_PAT`) in CI.
 
-Author
-Barbara Larrosa — ATS Analyst · LinkedIn
+## Author
+
+Barbara Larrosa — ATS Analyst · [LinkedIn](https://www.linkedin.com/in/barblarrosa/)
