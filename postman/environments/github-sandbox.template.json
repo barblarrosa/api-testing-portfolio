@@ -1,5 +1,5 @@
 {
-  "name": "GitHub Sandbox",
+  "name": "GitHub Sandbox (template)",
   "_postman_variable_scope": "environment",
   "values": [
     {
@@ -9,27 +9,12 @@
     },
     {
       "key": "owner",
-      "value": "barblarrosa",
+      "value": "YOUR_GITHUB_USERNAME",
       "enabled": true
     },
     {
       "key": "repo",
-      "value": "api-testing-sandbox",
-      "enabled": true
-    },
-    {
-      "key": "pat_rw",
-      "value": "",
-      "enabled": true
-    },
-    {
-      "key": "pat_ro",
-      "value": "",
-      "enabled": true
-    },
-    {
-      "key": "run_id",
-      "value": "",
+      "value": "YOUR_SANDBOX_REPO",
       "enabled": true
     }
   ]
