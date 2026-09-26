@@ -10,9 +10,8 @@ In progress — started September 2026.
 
 The GitHub REST API, exercised against a dedicated sandbox repository. Chosen over the usual practice APIs because it is a production service with real authentication, rate limiting, pagination and error semantics (401 / 403 / 404 / 422), which makes negative and boundary testing meaningful rather than simulated.
 
-Base URL: `[https://api.github.com](https://api.github.com)`
-**Sandbox repository:** `[barblarrosa/api-testing-sandbox]`
-`https://github.com/barblarrosa/api-testing-sandbox`
+**Base URL:** `https://api.github.com`
+**Sandbox repository:** `barblarrosa/api-testing-sandbox` (private — practice data only, not meant to be browsed)
 
 ## Scope
 
@@ -45,8 +44,11 @@ reports/              # Curated execution reports (sample runs only)
 
 ## Credentials
 
-No tokens or secrets are stored in this repository. Environment files are committed as templates with empty values; secrets are resolved from Postman Vault locally and from repository secrets (`SANDBOX_PAT`) in CI.
+No tokens or secrets are stored in this repository. Environment templates ship with placeholder values only.
 
-## Author
+For local development, add two secrets to Postman Vault, scoped to your own sandbox repository:
 
-Barbara Larrosa — ATS Analyst · [LinkedIn](https://www.linkedin.com/in/barblarrosa/)
+- `github_token_write` — fine-grained PAT with read/write access to Issues
+- `github_token_readonly` — fine-grained PAT with read-only access to Issues and metadata (used for negative authorization tests)
+
+CI secret configuration will be documented once the pipeline is built.
